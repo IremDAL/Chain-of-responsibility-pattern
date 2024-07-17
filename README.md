@@ -18,6 +18,6 @@ Bir nesne ağacının bir dalından bir zincir oluşturulabilir.
 
 ![solution2-en](https://github.com/user-attachments/assets/8ed204d1-993e-4cf8-9a1b-20531906a219)
 
-Tüm işleyici sınıflarının aynı arayüzü uygulaması çok önemlidir. Her somut işleyici yalnızca yöntemi olan bir sonrakiyle ilgilenmelidir. Bu şekilde, kodunuzu somut sınıflarına bağlamadan çeşitli işleyicileri kullanarak çalışma zamanında zincirler oluşturabilirsiniz.
+Chain of Responsibility deseninde, tüm işleyici sınıflarının aynı arayüzü uygulaması çok önemlidir. Bu yaklaşım, işleyicilerin bir zincir boyunca tutarlı bir şekilde çalışmasını sağlar ve kodun yeniden kullanılabilirliğini artırır. Arayüz, işleyicilerin uyması gereken bir sözleşme gibidir ve her işleyicinin bu sözleşmeyi yerine getirmesi beklenir.
 
 
