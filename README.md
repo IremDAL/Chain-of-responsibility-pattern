@@ -14,3 +14,8 @@ Bir müşteri hizmetleri uygulamasında, müşteri şikayetleri farklı işleyic
 
 ![solution1-en](https://github.com/user-attachments/assets/ae27103d-2c82-4ceb-905b-fb98cdd053fb)
 
+Ağaç Yapısı:
+Chain of Responsibility deseninde işleyiciler yalnızca düz bir zincir olarak değil, aynı zamanda ağaç yapısında da organize edilebilir. Bu durumda, her işleyici bir veya daha fazla alt işleyiciye sahip olabilir ve isteği işleyemediğinde bu alt işleyicilere yönlendirebilir. Bu yapı, daha karmaşık iş akışlarını ve hiyerarşileri destekler. Ağaç yapısı, özellikle birbirine bağlı ve bağımlı iş akışları olan sistemlerde faydalıdır, çünkü her işleyici kendi alt işleyicileriyle birlikte çalışarak daha özelleşmiş ve detaylı işleme yapabilir.
+
+Ağaç Yapısına Örnek:
+Bir e-ticaret platformunda, müşteri talepleri farklı kategorilere göre yönlendirilir. İlk olarak, müşteri destek ekibi talepleri alır. Bu ekip, talepleri çözebilir veya ürün desteği, ödeme sorunları, teknik destek gibi daha özel alt ekiplerine yönlendirebilir. Örneğin, bir ürünle ilgili sorun yaşayan müşteri, önce genel müşteri destek ekibine ulaşır. Eğer sorun çözülemezse, talep ürün desteği ekibine yönlendirilir. Ürün desteği ekibi de kendi içinde farklı uzmanlık alanlarına (örneğin, elektronik ürünler, giyim, mobilya) sahip olabilir. Bu hiyerarşik yapı, taleplerin daha hızlı ve etkin bir şekilde çözülmesini sağlar.
