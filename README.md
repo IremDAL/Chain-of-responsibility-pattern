@@ -10,4 +10,6 @@ Chain of Responsibility tasarım deseni, bir isteğin bir dizi işleyici nesnesi
 <p>Chain of Responsibility deseni, bu sorunu çözmek için işleyicileri bir zincir şeklinde düzenler. Her işleyici, isteği işleme veya bir sonraki işleyiciye yönlendirme kararını verir. Bu şekilde, isteğin hangi işleyici tarafından işleneceği dinamik olarak belirlenir ve zincire yeni işleyiciler eklemek veya mevcut işleyicileri değiştirmek kolaylaşır. Bu desen, kodun esnekliğini artırır ve işleme mantığını daha modüler ve bakımı kolay hale getirir.</p>
 <br/><br/>
 <p>Örneğin, bir müşteri hizmetleri uygulamasında, müşteri şikayetleri zincirdeki farklı işleyicilere yönlendirilir. Şikayet türüne bağlı olarak, şikayetler farklı departmanlara (örneğin, teknik destek, faturalama, genel müşteri hizmetleri) iletilir. Her departman, şikayeti işleyebilir veya bir sonraki departmana yönlendirebilir. Bu yapı, şikayetlerin doğru şekilde işlenmesini sağlar ve işleyicilerin işleme mantığını merkezi bir yerden yönetmek yerine dağıtır.</p>
+
 ![solution1-en](https://github.com/user-attachments/assets/ae27103d-2c82-4ceb-905b-fb98cdd053fb)
+
