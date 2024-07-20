@@ -1,0 +1,34 @@
+# Hata İşleme Projesi
+
+Bu proje, ASP.NET Core MVC uygulamasında hata işleme için Sorumluluk Zinciri (Chain of Responsibility) tasarım deseninin uygulanmasını göstermektedir. Proje, belirli anahtar kelimelere dayalı olarak hata mesajlarını işleyen birden fazla hata işleyici içerir.
+
+## Genel Bakış
+
+Sorumluluk Zinciri deseni, bir hata mesajının bir dizi işleyici boyunca geçmesine olanak tanır. Her işleyici, mesajı işleyip işleyemeyeceğine karar verir veya mesajı zincirdeki bir sonraki işleyiciye iletir. Bu proje üç hata işleyici içerir:
+1. ConsoleErrorHandler
+2. FileErrorHandler
+3. DatabaseErrorHandler
+
+Uygulama, kullanıcı tarafından girilen bir hata mesajını işler ve işlem sürecini loglar.
+
+## Özellikler
+
+- **Sorumluluk Zinciri Deseni**: Hata mesajlarını işlemek için Sorumluluk Zinciri tasarım deseni uygulanmıştır.
+- **ASP.NET Core MVC**: Kullanıcı girdilerini işlemek ve sonuçları görüntülemek için MVC mimarisi kullanılmıştır.
+- **Dinamik Hata İşleme**: Belirli anahtar kelimelere dayalı olarak hata mesajlarını dinamik olarak işler.
+
+## Proje Yapısı
+
+- **Models**: Soyut `ErrorHandler` sınıfı ve somut uygulamalarını (`ConsoleErrorHandler`, `FileErrorHandler`, `DatabaseErrorHandler`) içerir.
+- **Controllers**: HTTP isteklerini işleyen ve hata işleme sürecini koordine eden `HomeController` sınıfını içerir.
+- **Views**: Kullanıcı girdisini almak ve sonuçları görüntülemek için `Index.cshtml` görünümünü içerir.
+
+## Kurulum ve Kullanım
+
+### Gereksinimler
+
+- .NET 5.0 veya daha yeni bir sürüm
+- Visual Studio veya herhangi bir C# uyumlu IDE
+
+
+## Örnek
